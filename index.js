@@ -23,9 +23,9 @@ app.get('/', async (req, res) => {
 
   ctx.drawImage(image, 0, 0);
 
-  ctx.font = '32px "29LT Kaff Semi-Bold"';
+  ctx.font = '38px "29LT Kaff"';
   ctx.fillStyle = '#11BAB1';
-  ctx.fillText(nameText, 120, 455);
+  ctx.fillText(nameText, 165, 625);
 
   res.writeHead(200, {
     'Content-Type': 'application/pdf',
