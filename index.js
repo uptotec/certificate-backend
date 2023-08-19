@@ -33,6 +33,7 @@ app.get('/', async (req, res) => {
   });
   const stream = canvas.createPDFStream();
   stream.pipe(res);
+  image.src = null;
 });
 
 app.listen(port, () => {
